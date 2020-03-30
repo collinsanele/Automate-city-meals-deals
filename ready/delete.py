@@ -43,7 +43,8 @@ def delete_all(driver):
     for _ in range(3):
         for num in range(1, 3):
             try:
-                url = f"https://www.citymealdeals.co.uk/wp-admin/edit.php?post_type=event&paged={num}"
+                #url = f"https://www.citymealdeals.co.uk/wp-admin/edit.php?post_type=event&paged={num}"
+                url = "https://www.citymealdeals.co.uk/wp-admin/edit.php?post_type=event&paged="+str(num)
                 driver.get(url)
                 WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "cb-select-all-1")))
                 all_offers_check_box = driver.find_element_by_id("cb-select-all-1")
