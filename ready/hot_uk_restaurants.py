@@ -62,7 +62,8 @@ def hotuk_res(driver):
     urls = [url for url in urls if url != ""]
     titles = [title for title in titles if title != ""]
     names = [name for name in names if name != ""]
-    google_map_links = [f'https://www.google.com/maps/search/{name.replace(" ", "+")}' for name in names]
+    #google_map_links = [f'https://www.google.com/maps/search/{name.replace(" ", "+")}' for name in names]
+    google_map_links = ['https://www.google.com/maps/search/'+name.replace(" ", "+") for name in names]
     
     
     for url in urls[0:]:
