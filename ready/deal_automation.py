@@ -63,9 +63,12 @@ def handle_date(driver):
         future_year = future_date.year
 
         date_start_input.clear()
-        date_start_input.send_keys(f"{day}/{month}/{year}")
+        #date_start_input.send_keys(f"{day}/{month}/{year}")
+        date_start_input.send_keys(str(day)+"/"+ str(month)+"/"+str(year))
+
         date_end_input.clear()
-        date_end_input.send_keys(f"{future_day}/{future_month}/{future_year}")
+        #date_end_input.send_keys(f"{future_day}/{future_month}/{future_year}")
+        date_end_input.send_keys(str(future_day) + "/" + str(future_month) + "/" + str(future_year))
 
 
 
