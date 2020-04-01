@@ -24,11 +24,17 @@ from hot_uk_restaurants import hotuk_res
 from bella_italia import scrape_bella
 from ask_italia import scrape_ask_italian
 from deal_automation import Automation
-
+from pyvirtualdisplay import Display
+ 
+ 
+ 
+#Important
+display = Display(visible=0, size=(800, 600))
+display.start()
 
 
 #Instantiate driver
-driver = webdriver.Chrome("chromedriver.exe")
+driver = webdriver.Chrome(executable_path="/usr/bin/google-chrome")
 
 
 def main():
