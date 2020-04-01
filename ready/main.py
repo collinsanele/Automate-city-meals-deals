@@ -34,7 +34,7 @@ display.start()
 
 
 #Instantiate driver
-driver = webdriver.Chrome(executable_path="/usr/bin/google-chrome")
+driver = webdriver.Chrome(executable_path='/usr/lib/chromium-browser/chromedriver')
 
 
 def main():
