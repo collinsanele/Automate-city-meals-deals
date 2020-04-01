@@ -15,6 +15,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.chrome.options import Options
 import datetime
+from pyvirtualdisplay import Display
 
 #My script imports
 from login import Login
@@ -24,7 +25,7 @@ from hot_uk_restaurants import hotuk_res
 from bella_italia import scrape_bella
 from ask_italia import scrape_ask_italian
 from deal_automation import Automation
-from pyvirtualdisplay import Display
+
  
  
  
